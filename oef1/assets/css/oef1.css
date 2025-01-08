@@ -1,0 +1,183 @@
+/*
+    naam: Ilayda Sonmez
+*/
+
+/*
+Hint: 
+    (1) Omzetten naar hoofdletters:
+            text-transform: uppercase;
+    (2) Schaduw in figcaption
+            text-shadow: 2px 2px 2px black;
+    (3) Eerste 3 lijnen tonen van de paragrafen
+            line-height:1em;
+	        height:3em;
+    (4) Herschaling van de figuren 
+            aspect-ratio: 400 / 225;
+            object-fit:cover;
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 10px;
+}
+
+nav {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border: 2px solid orange;
+    width: 250px;
+    border-radius: 7px;
+    font-size: 1.4em;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    z-index: 5;
+}
+
+nav ul li:first-child a {
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: orange;
+    color: white;
+    display: block;
+    text-align: center;
+    padding-left: 0;
+    border-radius: 5px 5px 0 0;
+}
+
+
+nav ul li:first-child a img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    object-position: center;
+    margin-left: 5px;
+}
+
+nav ul li:last-child {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+}
+
+nav ul li:last-child a img {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+}
+
+footer {
+    width: 100%;
+    left: 0;
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+    color: white;
+    background-color: orange;
+}
+
+header {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 2px solid orange;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+header h2 {
+    text-transform: uppercase;
+    border-left: 10px solid orange;
+    padding-left: 0.5em;
+    font-size: 2em;
+}
+
+main article img {
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+figure {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    aspect-ratio: 400 / 225;
+    object-fit: cover;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: small;
+    font-family: sans-serif;
+}
+
+.rij1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rij2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    grid-column: 1 / span 2;
+}
+
+.rij2 > article {
+    padding: 10px;
+}
+
+.rij2 > article img {
+    width: 100%;
+    aspect-ratio: 400 / 225;
+    object-fit: cover;
+}
+
+article:not(.art1) p {
+    line-height: 1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 3em;
+    white-space: normal;
+}
+
+.art1 figure {
+    float: left;
+    margin-right: 1em;
+}
+
+
+
+
+

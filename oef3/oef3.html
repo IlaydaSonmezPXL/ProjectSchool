@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- naam: Ilayda Sonmez -->
+<head>
+    <meta charset="UTF-8">
+    <title>Oef3</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/oef3.css">
+</head>
+<body>
+<h1>Mussen vs Vinken</h1>
+<form action="waarneming.html" method="get">
+    <fieldset class="vak1">
+        <legend>Algemeen</legend>
+        <div>
+            <label class="datum" for="datum">Datum:</label>
+            <input type="date" id="datum" name="datum" value="01-12-2023">
+        </div>
+
+        <div>
+            <label class="tijd" for="tijd">Tijd:</label>
+            <select id="tijd" name="tijd">
+                <option value="0_6">0u-6u</option>
+                <option value="6_12">6u-12u</option>
+                <option value="12_18">12u-18u</option>
+                <option value="18_24">18u-24u</option>
+            </select>
+        </div>
+
+        <div>
+            <label class="neerslag">Neerslag:</label>
+            <input type="radio" id="Geen" name="neerslag" value="geen" checked>
+            <label for="geen">Geen</label>
+
+            <input type="radio" id="Matig" name="neerslag" value="matig">
+            <label for="Matig">Matig</label>
+
+            <input type="radio" id="Overvloedig" name="neerslag" value="overvloedig">
+            <label for="Overvloedig">Overvloedig</label>
+        </div>
+
+    </fieldset>
+    <fieldset class="vak2">
+        <legend>Vogels</legend>
+        <img src="assets/images/mus.png"><label for="aantal_mus">#mussen</label>
+        <input type="number" id="aantal_mus" name="aantal_mus" min="0" max="10" value="0">
+        <label for="zekerheid_mus">Zeker</label>
+        <input type="range" id="zekerheid_mus" name="zekerheid_mus" min="0" max="100"><br/>
+
+
+        <img src="assets/images/vink.png"><label for="aantal_vink">#vinken</label>
+        <input type="number" id="aantal_vink" name="aantal_vink" min="0" max="10" value="0">
+        <label for="zekerheid_vink">Zeker</label>
+        <input type="range" id="zekerheid_vink" name="zekerheid_vink" min="0" max="100">
+    </fieldset>
+    <fieldset class="vak3">
+        <legend>Acties</legend>
+
+        <input class="button" type="submit" value="Registreer">
+        <input class="button" type="reset" value="Maak leeg">
+    </fieldset>
+</form>
+</body>
+</html>

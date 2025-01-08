@@ -1,0 +1,70 @@
+/* naam: Ilayda Sonmez
+
+*/
+
+form {
+    width: 900px;
+    padding-left: 200px;
+}
+
+h1 {
+    padding-left: 200px;
+}
+
+img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 1px solid black;
+    object-fit: cover;
+    object-position: center;
+    padding: 4px;
+}
+
+legend {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+fieldset {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.vak3 {
+    display: flex;
+    gap: 10px;
+}
+
+.vak3 .button {
+    flex: 1;
+    background-color: #3b5998;
+    color: white;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.vak3 .button:hover {
+    background-color: #2d4373;
+}
+
+.datum, .tijd, .neerslag {
+    display: inline-block;
+    width: 100px;
+}
+
+.datum, .tijd {
+    padding-bottom: 20px;
+}
+
+.vak2 label {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+
+
+
